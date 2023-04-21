@@ -1,0 +1,19 @@
+-- Criação do Banco de Dados
+create database cadastro;
+
+-- Utilização do Banco de Dados
+use cadastro;
+
+-- Criação da Tabela Usuários
+create table usuarios(
+id int auto_increment unique not null,
+username varchar(25) unique,
+password varchar(25),
+nome varchar(45),
+sobrenome varchar(45),
+CPF varchar(15),
+idade int
+);
+
+-- Inserção de Dados na Tabela Usuários
+INSERT INTO `cadastro`.`usuarios` (`username`, `password`) VALUES ('adm', 'adm');
